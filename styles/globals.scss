@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+:root {
+  --navy: #072146;
+  --blue: #5BBEFF;
+  --white: #EAF9FA;
+
+  --title: 3.375rem;
+  --h1: 2.625rem;
+  --h2: 2.125rem;
+  --h3: 1.625rem;
+  --h4: 1.25rem;
+  --p: 2rem;
+
+  --libre: 'Libre Franklin';
+}
+
+html {
+  font-family: 'Poppins';
+  font-size: 62.5%;
+}
+
+body {
+  background: black;
+  color: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+
+}

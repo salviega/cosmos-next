@@ -1,0 +1,49 @@
+.header {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_menu {
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_left {
+      width: 18.3rem;
+      height: 6rem;
+      a {
+        img {
+          width: 18.3rem;
+          height: 6rem;
+        }
+      }
+    }
+
+    &_center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 6rem;
+
+      &__item {
+        width: max-content;
+        font-size: var(-p);
+        font-style: normal;
+        font-weight: 600rem;
+        font-size: var(--p);
+        line-height: 3rem;
+        color: var(--white);
+
+        &:hover {
+          border-bottom: solid 0.1rem var(--white);
+        }
+
+        &--active {
+          color: var(--blue);
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,14 @@
-import '../styles/globals.css'
+import '../styles/globals.scss'
+import { Layout } from '../components/Layout'
+import { CosmosProvider } from 'hook/context'
+import { WagmiConfig } from 'wagmi'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default function MyApp({ Component, pageProps }) {
+  return (
+      <CosmosProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </CosmosProvider>
+  )
 }
-
-export default MyApp
