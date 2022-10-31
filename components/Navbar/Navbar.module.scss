@@ -38,9 +38,21 @@
 
         &:hover {
           border-bottom: solid 0.1rem var(--white);
+          color: var(--blue);
         }
 
-        &--active {
+        &__active {
+          width: max-content;
+          border-bottom: solid 0.1rem var(--white);
+          font-size: var(-p);
+          font-style: normal;
+          font-weight: 600rem;
+          font-size: var(--p);
+          line-height: 3rem;
+          color: var(--blue);
+        }
+
+        &:hover {
           color: var(--blue);
         }
       }

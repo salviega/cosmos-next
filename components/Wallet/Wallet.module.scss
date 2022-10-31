@@ -1,17 +1,10 @@
 .wallet {
   padding: 0rem 0.6rem;
-  height: 6rem;
   width: 20rem;
+  height: 6rem;
   cursor: pointer;
+  border-radius: 0.2rem;
   background: var(--blue);
-  border: none;
-  border-radius: 0.25em;
-  font-size: var(-p);
-  font-style: normal;
-  font-weight: 600rem;
-  font-size: var(--p);
-  line-height: 3rem;
-  color: var(--white);
 }
 
 // Algunos estilos provocan que imagen de cerrado y de regreso dentro del

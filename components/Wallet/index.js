@@ -36,11 +36,12 @@ export function Wallet() {
 
   return (
     <button className={styles.wallet} onClick={connectWallet}>
-      {loading
+      <p> {loading
         ? "loading..."
         : auth.user.walletAddress !== "Connect wallet"
         ? "..." + String(auth.user.walletAddress).slice(36)
         : "Connect wallet"}
+      </p>
     </button>
   );
 }

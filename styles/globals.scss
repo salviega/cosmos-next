@@ -40,5 +40,10 @@ a {
 }
 
 p {
-
+  font-size: var(-p);
+  font-style: normal;
+  font-weight: 600rem;
+  font-size: var(--p);
+  line-height: 3rem;
+  color: var(--white);
 }
