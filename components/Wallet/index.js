@@ -42,7 +42,6 @@ export function Wallet() {
   return (
     <button className={styles.wallet} onClick={connectWallet}>
       <p>
-        {" "}
         {loading
           ? "loading..."
           : walletAddress !== "Connect wallet"
