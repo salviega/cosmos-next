@@ -1,0 +1,47 @@
+.footer {
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_container {
+    border-top: solid 0.2rem var(--white);
+    padding-top: 5.76rem;
+    padding-bottom: 2.4rem;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+
+    &_left {
+      margin-left: 4.2rem;
+      img {
+        margin-bottom: 2em;
+        width: 4rem;
+        height: auto;
+      }
+    }
+
+    &_right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__head {
+      margin-bottom: 2em;
+      font-weight: 300;
+      line-height: 1em;
+    }
+
+    &__item {
+      margin-bottom: 1.5em;
+      font-weight: 600;
+      line-height: var(--h4);
+      cursor: pointer;
+
+      &:hover {
+        color: var(--blue);
+      }
+    }
+  }
+}

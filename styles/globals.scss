@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 *,
 *::after,
@@ -11,8 +11,8 @@
 
 :root {
   --navy: #072146;
-  --blue: #5BBEFF;
-  --white: #EAF9FA;
+  --blue: #5bbeff;
+  --white: #eaf9fa;
 
   --title: 3.375rem;
   --h1: 2.625rem;
@@ -21,11 +21,11 @@
   --h4: 1.25rem;
   --p: 2rem;
 
-  --libre: 'Libre Franklin';
+  --libre: "Libre Franklin";
 }
 
 html {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 62.5%;
 }
 
@@ -40,6 +40,7 @@ a {
 }
 
 p {
+  width: max-content;
   font-size: var(-p);
   font-style: normal;
   font-weight: 600rem;
