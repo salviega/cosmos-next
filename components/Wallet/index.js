@@ -5,6 +5,7 @@ import { useAuth } from "hook/context";
 
 export function Wallet() {
   const [loading, setLoading] = React.useState(false);
+  const [walletAddress, setWalletAddress] = React.useState("");
   const auth = useAuth();
 
   const connectWallet = async () => {
@@ -34,13 +35,19 @@ export function Wallet() {
     }
   };
 
+  React.useEffect(() => {
+    setWalletAddress(auth.user.walletAddress);
+  }, [auth.user.walletAddress]);
+
   return (
     <button className={styles.wallet} onClick={connectWallet}>
-      <p> {loading
-        ? "loading..."
-        : auth.user.walletAddress !== "Connect wallet"
-        ? "..." + String(auth.user.walletAddress).slice(36)
-        : "Connect wallet"}
+      <p>
+        {" "}
+        {loading
+          ? "loading..."
+          : walletAddress !== "Connect wallet"
+          ? "..." + String(walletAddress).slice(36)
+          : "Connect wallet"}
       </p>
     </button>
   );
